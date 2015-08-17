@@ -4,7 +4,7 @@ export ZSH=/Users/alecfwilson/.oh-my-zsh
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # Load the shell dotfiles, and then some:
-for file in ~/.{aliases,bash_prompt,exports,functions,extra,bashrc,bash_profile}; do
+for file in ~/.{aliases,exports,functions}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 

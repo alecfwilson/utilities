@@ -23,25 +23,4 @@ export GREP_OPTIONS="--color=auto";
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/alecfwilson/.oh-my-zsh
-## Use gnu tools instead
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
-
-# Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=1
-
-source /Users/alecfwilson/.profile
-# Initialization for FDK command line tools.Mon Apr 27 18:59:55 2015
-FDK_EXE="/Users/alecfwilson/bin/FDK/Tools/osx"
-PATH=${PATH}:"/Users/alecfwilson/bin/FDK/Tools/osx"
-export PATH
-export FDK_EXE
