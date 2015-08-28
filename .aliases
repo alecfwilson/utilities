@@ -20,6 +20,9 @@ alias core="~/survata-repos/survata-core"
 alias router="~/survata-repos/survata-router"
 alias surveywall="~/survata-repos/survata-surveywall"
 alias utils="~/workspace/utilities"
+alias sf="s ~/.functions"
+alias sal="s ~/.aliases"
+alias gp="gitpull"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

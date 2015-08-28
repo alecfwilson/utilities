@@ -169,11 +169,11 @@ function gitadd {
 }
 
 function rebase() {
-    branchname=$(git describe --contains --all HEAD) && git checkout master && git pull && git checkout $branchname && git rebase -i master;
+    branchname=$(git describe --contains --all HEAD) && git checkout master && git pull && git checkout $branchname && git rebase -i master && git push origin $branchname -f;
 }
 
 function merge() {
-    branchname=$(git describe --contains --all HEAD) && git push origin $branchname -f && git checkout master && git merge $branchname --ff-only && git push && git branch -D $branchname;
+    branchname=$(git describe --contains --all HEAD) && git push origin $branchname -f; git checkout master && git merge $branchname --ff-only && git push && git branch -D $branchname;
 }
 
 function updates {
@@ -214,7 +214,7 @@ function brewdoctor {
 
 ## Brew
 function brewme {
-    brewupdate; brewcleanup; brewdoctor;
+    brewupdate; brew upgrade --all --verbose; brewcleanup; brewdoctor;
 }
 
 function gitpull {
